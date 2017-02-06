@@ -56,3 +56,5 @@ An example simple program is:
 10 33 100 108 114 111 87 32 111 108 108 101 72 Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@
 
 Some example programs can be found along with the reference implementation [here](https://github.com/ZacharyForman/GozzLang).
+
+To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it.
