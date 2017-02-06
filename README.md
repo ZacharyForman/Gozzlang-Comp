@@ -45,7 +45,7 @@ All operations affect the stack in some way, as do many of the keywords. Gozz ho
 |Gozz!|Ends a function declaration.|
 |Gozz>|Starts a loop|
 |\<Gozz|Ends a loop|
-|Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it.|
+|Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it. If the skipped instruction is a control flow instruction (Gozz:, Gozz!, Gozz> or \<Gozz), behaviour is not defined.|
 |Gozz/|Exits the current routine. When called in the base routine, must terminate the program.|
 
 A function declaration takes form:
@@ -57,4 +57,4 @@ An example simple program is:
 
 Some example programs can be found along with the reference implementation [here](https://github.com/ZacharyForman/GozzLang).
 
-To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it.
+To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it. Your source files may /at most/ be 100kB in size.
