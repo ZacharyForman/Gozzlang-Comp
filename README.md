@@ -11,7 +11,7 @@ As Gozz is obsessed with prime numbers, and thinks boolean values are lame, he h
 
 All operators must match the regex [Gg][Oo][Zz][Zz]. 9 of these operators are reserved, leaving only 7 for a program to define. Following is a table of operators and keywords.
 
-All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that popping from an empty stack will produce an undefined gozzy number that has value less than or equal to the golden ratio plus one (as the golden ratio holds a special wonder for Gozz).
+All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that popping from an empty stack will produce an undefined gozzy number that has value less than or equal to the golden ratio plus one (as the golden ratio holds a special off by wonder for Gozz).
 
 |Operator|Function|
 |---|---|
