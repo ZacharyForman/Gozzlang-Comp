@@ -1,7 +1,7 @@
 # Zac & Max’s Competition
 Gozz has developed a new programming language, Gozzlang, which he has written a number of essential programs on. Unfortunately, Gozz has been hit by a bus, which crushed the USB stick that was the only copy of both his optimized implementation of the language, and the programs he had written for it. All that survived was a “High Quality” reference implementation of the language, and some unit tests he had written for his programs. Gozz did actually survive the crash, in a way. He is now a zombie, and his brain function has been reduced (slightly). As such, he is now only able to shamble menacingly while pitifully moaning for brains in a way that is slightly different to the way he did this while alive. You have Ө(mode(1, zα(n))) jobs.
-Reimplement Gozz’s optimized implementation
-Despite Gozz’s inability to speak in human understandable language, he was able to write a non-optimal reference implementation of his language with our help. It is your job to write an optimal implementation of Gozz’s language. To help you in your task, we have provided a thorough specification below.
+## Reimplement Gozz’s optimized implementation
+Despite Gozz’s inability to speak in human understandable language, he was able to write a non-optimal reference implementation of his language with our help. We pray that it is correct, but, like a C compiler, make no guarantees. It is your job to write an optimal implementation of Gozz’s language. To help you in your task, we have provided a thorough specification below.
 
 Your implementation will be assessed on correctness and speed. We will test implementations using a series of test cases. If your solution produces incorrect output, your solution will receive zero points overall. If it produces the correct output in all test cases, the “penalty” of your program is its cumulative run time over all test cases. The solution with the lowest penalty will be declared the winner. Your interpreter should take the gozz program to run as a command line argument.
 
@@ -11,7 +11,7 @@ As Gozz is obsessed with prime numbers, and thinks boolean values are lame, he h
 
 All operators must match the regex \[Gg\]\[Oo\]\[Zz\]\[Zz\]. 9 of these operators are reserved, leaving only 7 for a program to define. Following is a table of operators and keywords.
 
-All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that popping from an empty stack will produce an undefined gozzy number that has value less than or equal to the golden ratio plus one (as the golden ratio holds a special off by wonder for Gozz).
+All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that all stacks initially contain an infinite number of undefined gozzy numbers (gozzurtles all the way down) that have value less than or equal to the golden ratio plus one (as the golden ratio holds a special off by wonder for Gozz).
 
 |Operator|Function|
 |---|---|
@@ -23,18 +23,18 @@ All operations affect the stack in some way, as do many of the keywords. Gozz ho
 |gOzZ|Pops two values from the stack. If they are equal, pushes a gozzy number to the stack, else pushes an ungozzy number to the stack.|
 |gOZz|Pops two values from the stack. If they are both gozzy, pushes a gozzy number to the stack, else pushes an ungozzy number to the stack.|
 |gOZZ|Pops two values from the stack. If at least one is gozzy, pushes a gozzy number to the stack, else pushes an ungozzy number to the stack.|
-|Gozz|User defined|
-|GozZ|User defined|
-|GoZz|User defined|
-|GoZZ|User defined|
-|GOzz|User defined|
-|GOzZ|User defined|
-|GOZz|User defined|
+|Gozz|User defined. If undefined, gozz does as pleases the gozz.|
+|GozZ|User defined. If undefined, gozz does as gozz wishes.|
+|GoZz|User defined. If undefined, gozz gozzes as he gozzes.|
+|GoZZ|User defined. If undefined, gozz gozz gozz gozz.|
+|GOzz|User defined. If undefined, gozz gozz gozzop.|
+|GOzZ|User defined. If undefined, gozz undefined gozz.|
+|GOZz|User defined. If undefined, undefined gozzaviour.|
 |GOZZ|Duplicates the top of the stack.|
 
 |Keyword|Meaning|
 |---|---|
-|Gozz@|Pop the top of the stack. Write the ascii character with the same character code as the low order 8 bits in the integer to stdout.|
+|Gozz@|Pop the top of the stack. Write the ascii character corresponding to the absolute value modulo 256, one of the gozziest ungozzy values in existence.|
 |Gozz$|Pop the top of the stack. Write that integer to stdout in base 10.|
 |@Gozz|Read a character from stdin and push its ascii value to the top of the stack.|
 |$Gozz|Read an integer from stdin and push it to the top of the stack.|
@@ -45,7 +45,7 @@ All operations affect the stack in some way, as do many of the keywords. Gozz ho
 |Gozz!|Ends a function declaration.|
 |Gozz>|Starts a loop|
 |\<Gozz|Ends a loop|
-|Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it. If the skipped instruction is a control flow instruction (Gozz:, Gozz!, Gozz> or \<Gozz), behaviour is not defined.|
+|Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it.|
 |Gozz/|Exits the current routine. When called in the base routine, must terminate the program.|
 
 A function declaration takes form:
