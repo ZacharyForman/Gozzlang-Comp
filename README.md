@@ -7,9 +7,9 @@ Your implementation will be assessed on correctness and speed. We will test impl
 
 Gozz’s language, like most languages in popular use, is a stack based language, much like Factor, Postscript, Joy, or Cat. It features loops, recursion, conditional statements, and all the standard stack based language stuff. Such languages generally keep a single stack, representing the state of the program. Operators take elements from the top of the stack, do something with them, and can push a result back onto the stack.
 
-As Gozz is obsessed with prime numbers, and thinks boolean values are lame, he has replaced the concepts of ‘true’ and ‘false’ with the concept of ‘gozziness’. Prime values are ‘gozzy’, and ‘ungozzy’ values are non prime. It is implementation defined which prime number / non-prime number is used to represent the result of a specific gozzy operation.
+As Gozz is obsessed with prime numbers, and thinks boolean values are lame, he has replaced the concepts of ‘true’ and ‘false’ with the concept of ‘gozziness’. Prime values are ‘gozzy’, and ‘ungozzy’ values are non prime. It is implementation defined which prime number / non-prime number is used to represent the result of a specific gozzy operation. Negative numbers are, naturally, ungozzy.
 
-All operators must match the regex [Gg][Oo][Zz][Zz]. 9 of these operators are reserved, leaving only 7 for a program to define. Following is a table of operators and keywords.
+All operators must match the regex \[Gg\]\[Oo\]\[Zz\]\[Zz\]. 9 of these operators are reserved, leaving only 7 for a program to define. Following is a table of operators and keywords.
 
 All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that popping from an empty stack will produce an undefined gozzy number that has value less than or equal to the golden ratio plus one (as the golden ratio holds a special off by wonder for Gozz).
 
