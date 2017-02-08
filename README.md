@@ -48,7 +48,7 @@ As Gozz values his personal space, a valid Gozzlang program will have all operat
 |Gozz:|Starts a function declaration|
 |Gozz!|Ends a function declaration.|
 |Gozz>|Starts a loop|
-|\<Gozz|Ends a loop from earlier in the program (temporally, not necessarily spatially)|
+|\<Gozz|Ends a loop from earlier in the function (temporally, not necessarily spatially)|
 |Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it.|
 |Gozz/|Exits the current routine. When called in the base routine, must terminate the program.|
 
