@@ -57,4 +57,4 @@ An example simple program is:
 
 Some example programs can be found along with the reference implementation [here](https://github.com/ZacharyForman/GozzLang).
 
-To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it. Your source files may /at most/ be 100kB in size.
+To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it. Clarification can be requested by emailing me (github email) or making an issue on this repository. Your source files may /at most/ be 10kB in size. We will judge the contest on the 15th of March.
