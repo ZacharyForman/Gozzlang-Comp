@@ -15,11 +15,13 @@ All operators must match the regex \[Gg\]\[Oo\]\[Zz\]\[Zz\]. 9 of these operator
 
 All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that all stacks initially contain an infinite number of undefined gozzy numbers (gozzurtles all the way down) that have value less than or equal to the golden ratio plus one (as the golden ratio holds a special off by wonder for Gozz).
 
+As Gozz values his personal space, a valid Gozzlang program will have all operators and keywords separated by one or more whitespace characters. As Gozz is not a fan of cryptography, unicode characters outside of the ascii range are disallowed.
+
 |Operator|Function|
 |---|---|
 |gozz|Pops two values from the stack, adds them together, and pushes the result onto the stack.|
 |gozZ|Pops two values from the stack, subtracts the second from the first, and pushes the result onto the stack.|
-|goZz|Pops two values from the stack, divides the first by the second, and pushes the result onto the stack.|
+|goZz|Pops two values from the stack, divides the first by the second, and pushes the result onto the stack. Where division is ill defined, Gozz becomes angry and may terminate the program in any manner he sees fit.|
 |goZZ|Pops two values from the stack, multiplies them together, and pushes the result onto the stack.|
 |gOzz|Pops a value from the stack. If it is gozzy, pushes an ungozzy number to the stack, else pushes a gozzy number to the stack.|
 |gOzZ|Pops two values from the stack. If they are equal, pushes a gozzy number to the stack, else pushes an ungozzy number to the stack.|
@@ -46,13 +48,14 @@ All operations affect the stack in some way, as do many of the keywords. Gozz ho
 |Gozz:|Starts a function declaration|
 |Gozz!|Ends a function declaration.|
 |Gozz>|Starts a loop|
-|\<Gozz|Ends a loop|
+|\<Gozz|Ends a loop from earlier in the program (temporally, not necessarily spatially)|
 |Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it.|
 |Gozz/|Exits the current routine. When called in the base routine, must terminate the program.|
 
 A function declaration takes form:
 Gozz: \[Valid-Name\] \[Code\] Gozz!
 Where \[Valid-Name\] can be any of the operator names indicated user defined above, and [Code] is any valid string of operators and keywords.
+If a function is defined more than once, Gozz's love of splay trees causes the most recently defined function to be called.
 
 An example simple program is:
 10 33 100 108 114 111 87 32 111 108 108 101 72 Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@ Gozz@
