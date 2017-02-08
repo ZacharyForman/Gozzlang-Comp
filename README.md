@@ -9,6 +9,8 @@ Gozz’s language, like most languages in popular use, is a stack based language
 
 As Gozz is obsessed with prime numbers, and thinks boolean values are lame, he has replaced the concepts of ‘true’ and ‘false’ with the concept of ‘gozziness’. Prime values are ‘gozzy’, and ‘ungozzy’ values are non prime. It is implementation defined which prime number / non-prime number is used to represent the result of a specific gozzy operation. Negative numbers are, naturally, ungozzy.
 
+Additionally, as Gozz does not hold the axiom of choice as an axiom, all integers are bounded in size, in the range \[7 · 7 · 73 · 127 · 337 · 92737 · 649657 · -1 -1, 7 · 7 · 73 · 127 · 337 · 92737 · 649657\]
+
 All operators must match the regex \[Gg\]\[Oo\]\[Zz\]\[Zz\]. 9 of these operators are reserved, leaving only 7 for a program to define. Following is a table of operators and keywords.
 
 All operations affect the stack in some way, as do many of the keywords. Gozz holds it to be an axiom that all stacks initially contain an infinite number of undefined gozzy numbers (gozzurtles all the way down) that have value less than or equal to the golden ratio plus one (as the golden ratio holds a special off by wonder for Gozz).
