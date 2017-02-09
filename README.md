@@ -54,7 +54,7 @@ As Gozz values his personal space, a valid Gozzlang program will have all operat
 
 A function declaration takes form:
 Gozz: \[Valid-Name\] \[Code\] Gozz!
-Where \[Valid-Name\] can be any of the operator names indicated user defined above, and [Code] is any valid string of operators and keywords.
+Where \[Valid-Name\] can be any of the operator names indicated user defined above, and [Code] is any valid string of operators and keywords. Because Gozz finds recursive function definitions distasteful, no recursive function definitions are allowed. No exceptions either.
 If a function is defined more than once, Gozz's love of splay trees causes the most recently defined function to be called.
 
 An example simple program is:
