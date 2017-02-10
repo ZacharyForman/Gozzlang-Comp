@@ -49,12 +49,12 @@ As Gozz values his personal space, a valid Gozzlang program will have all operat
 |Gozz!|Ends a function declaration.|
 |Gozz>|Starts a loop|
 |\<Gozz|Ends a loop from earlier in the function (temporally, not necessarily spatially)|
-|Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the program, else skips it.|
+|Gozz?|Pops the top of the stack. If it is gozzy, performs the next instruction in the routine, else skips it.|
 |Gozz/|Exits the current routine. When called in the base routine, must terminate the program.|
 
 A function declaration takes form:
 Gozz: \[Valid-Name\] \[Code\] Gozz!
-Where \[Valid-Name\] can be any of the operator names indicated user defined above, and [Code] is any valid string of operators and keywords. Because Gozz finds recursive function definitions distasteful, no recursive function definitions are allowed. No exceptions either.
+Where \[Valid-Name\] can be any of the operator names indicated user defined above, and [Code] is any valid string of operators and keywords. Because Gozz finds recursive function definitions distasteful, no functions are permitted to be declared. No exceptions either, except in the main routine.
 If a function is defined more than once, Gozz's love of splay trees causes the most recently defined function to be called.
 
 An example simple program is:
@@ -62,4 +62,4 @@ An example simple program is:
 
 Some example programs can be found along with the reference implementation [here](https://github.com/ZacharyForman/GozzLang).
 
-To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it. Clarification can be requested by emailing me (github email) or making an issue on this repository. Because Gozz is capricious, we fully expect to need to clarify the language specification. Your source files may /at most/ be 10kB in size. We will judge the contest on the 15th of March.
+To submit your entry, fork this repository and make a pull request with your submission + instructions on how to build and run it. Clarification can be requested by emailing me (github email) or making an issue on this repository. Because Gozz is capricious, we fully expect to need to clarify the language specification. Your source files may /at most/ be 50kB in size. We will judge the contest on the 15th of March.
